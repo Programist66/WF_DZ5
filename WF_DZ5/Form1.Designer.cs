@@ -65,6 +65,7 @@
             startDateTimePicker.Size = new Size(240, 23);
             startDateTimePicker.TabIndex = 1;
             startDateTimePicker.ValueChanged += startDateTimePicker_ValueChanged;
+            startDateTimePicker.Leave += startDateTimePicker_ValueChanged;
             // 
             // label2
             // 
@@ -85,6 +86,7 @@
             endDateTimePicker.Size = new Size(240, 23);
             endDateTimePicker.TabIndex = 1;
             endDateTimePicker.ValueChanged += endDateTimePicker_ValueChanged;
+            endDateTimePicker.Leave += endDateTimePicker_ValueChanged;
             // 
             // label3
             // 
@@ -105,6 +107,7 @@
             coastTextBox.Size = new Size(240, 23);
             coastTextBox.TabIndex = 3;
             coastTextBox.TextChanged += coastTextBox_TextChanged;
+            coastTextBox.Leave += coastTextBox_TextChanged;
             // 
             // label4
             // 
@@ -125,6 +128,7 @@
             emailTextBox.Size = new Size(240, 23);
             emailTextBox.TabIndex = 3;
             emailTextBox.TextChanged += emailTextBox_TextChanged;
+            emailTextBox.Leave += emailTextBox_TextChanged;
             // 
             // totalPriceLabel
             // 
