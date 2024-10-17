@@ -29,138 +29,113 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            workStartLabel = new Label();
             startDateTimePicker = new DateTimePicker();
-            label2 = new Label();
+            workCompletionLabel = new Label();
             endDateTimePicker = new DateTimePicker();
-            label3 = new Label();
+            oneDayPriceLabel = new Label();
             coastTextBox = new TextBox();
-            label4 = new Label();
+            emailLabel = new Label();
             emailTextBox = new TextBox();
             totalPriceLabel = new Label();
             errorProvider1 = new ErrorProvider(components);
+            comboBox1 = new ComboBox();
+            choiseLanguageLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // workStartLabel
             // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label1.Location = new Point(32, 64);
-            label1.Name = "label1";
-            label1.Size = new Size(176, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Дата начала работ";
+            resources.ApplyResources(workStartLabel, "workStartLabel");
+            workStartLabel.Name = "workStartLabel";
             // 
             // startDateTimePicker
             // 
-            startDateTimePicker.Anchor = AnchorStyles.None;
+            resources.ApplyResources(startDateTimePicker, "startDateTimePicker");
             startDateTimePicker.CalendarForeColor = Color.Black;
             startDateTimePicker.CalendarMonthBackground = Color.White;
             startDateTimePicker.CalendarTitleForeColor = Color.Black;
             startDateTimePicker.CalendarTrailingForeColor = Color.LightSlateGray;
-            startDateTimePicker.Location = new Point(352, 64);
             startDateTimePicker.Name = "startDateTimePicker";
-            startDateTimePicker.Size = new Size(240, 23);
-            startDateTimePicker.TabIndex = 1;
             startDateTimePicker.ValueChanged += startDateTimePicker_ValueChanged;
             startDateTimePicker.Leave += startDateTimePicker_ValueChanged;
             // 
-            // label2
+            // workCompletionLabel
             // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(32, 112);
-            label2.Name = "label2";
-            label2.Size = new Size(209, 25);
-            label2.TabIndex = 0;
-            label2.Text = "Дата окончания работ";
+            resources.ApplyResources(workCompletionLabel, "workCompletionLabel");
+            workCompletionLabel.Name = "workCompletionLabel";
             // 
             // endDateTimePicker
             // 
-            endDateTimePicker.Anchor = AnchorStyles.None;
-            endDateTimePicker.Location = new Point(352, 112);
+            resources.ApplyResources(endDateTimePicker, "endDateTimePicker");
             endDateTimePicker.Name = "endDateTimePicker";
-            endDateTimePicker.Size = new Size(240, 23);
-            endDateTimePicker.TabIndex = 1;
             endDateTimePicker.ValueChanged += endDateTimePicker_ValueChanged;
             endDateTimePicker.Leave += endDateTimePicker_ValueChanged;
             // 
-            // label3
+            // oneDayPriceLabel
             // 
-            label3.Anchor = AnchorStyles.None;
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label3.Location = new Point(32, 160);
-            label3.Name = "label3";
-            label3.Size = new Size(207, 25);
-            label3.TabIndex = 2;
-            label3.Text = "Стоимость одного дня";
+            resources.ApplyResources(oneDayPriceLabel, "oneDayPriceLabel");
+            oneDayPriceLabel.Name = "oneDayPriceLabel";
             // 
             // coastTextBox
             // 
-            coastTextBox.Anchor = AnchorStyles.None;
-            coastTextBox.Location = new Point(352, 160);
+            resources.ApplyResources(coastTextBox, "coastTextBox");
             coastTextBox.Name = "coastTextBox";
-            coastTextBox.Size = new Size(240, 23);
-            coastTextBox.TabIndex = 3;
             coastTextBox.TextChanged += coastTextBox_TextChanged;
             coastTextBox.Leave += coastTextBox_TextChanged;
             // 
-            // label4
+            // emailLabel
             // 
-            label4.Anchor = AnchorStyles.None;
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label4.Location = new Point(32, 208);
-            label4.Name = "label4";
-            label4.Size = new Size(240, 25);
-            label4.TabIndex = 2;
-            label4.Text = "Адрес электронной почты";
+            resources.ApplyResources(emailLabel, "emailLabel");
+            emailLabel.Name = "emailLabel";
             // 
             // emailTextBox
             // 
-            emailTextBox.Anchor = AnchorStyles.None;
-            emailTextBox.Location = new Point(352, 208);
+            resources.ApplyResources(emailTextBox, "emailTextBox");
             emailTextBox.Name = "emailTextBox";
-            emailTextBox.Size = new Size(240, 23);
-            emailTextBox.TabIndex = 3;
             emailTextBox.TextChanged += emailTextBox_TextChanged;
             emailTextBox.Leave += emailTextBox_TextChanged;
             // 
             // totalPriceLabel
             // 
-            totalPriceLabel.Anchor = AnchorStyles.None;
-            totalPriceLabel.AutoSize = true;
-            totalPriceLabel.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            totalPriceLabel.Location = new Point(192, 352);
+            resources.ApplyResources(totalPriceLabel, "totalPriceLabel");
             totalPriceLabel.Name = "totalPriceLabel";
-            totalPriceLabel.Size = new Size(231, 30);
-            totalPriceLabel.TabIndex = 4;
-            totalPriceLabel.Text = "Итоговая стоимость: 0";
             // 
             // errorProvider1
             // 
             errorProvider1.ContainerControl = this;
             // 
+            // comboBox1
+            // 
+            resources.ApplyResources(comboBox1, "comboBox1");
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1") });
+            comboBox1.Name = "comboBox1";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
+            // choiseLanguageLabel
+            // 
+            resources.ApplyResources(choiseLanguageLabel, "choiseLanguageLabel");
+            choiseLanguageLabel.Name = "choiseLanguageLabel";
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(625, 450);
+            Controls.Add(comboBox1);
             Controls.Add(totalPriceLabel);
             Controls.Add(emailTextBox);
-            Controls.Add(label4);
+            Controls.Add(choiseLanguageLabel);
+            Controls.Add(emailLabel);
             Controls.Add(coastTextBox);
-            Controls.Add(label3);
+            Controls.Add(oneDayPriceLabel);
             Controls.Add(endDateTimePicker);
-            Controls.Add(label2);
+            Controls.Add(workCompletionLabel);
             Controls.Add(startDateTimePicker);
-            Controls.Add(label1);
+            Controls.Add(workStartLabel);
             Name = "Form1";
-            Text = "калькулятор стоимости работ";
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -168,15 +143,17 @@
 
         #endregion
 
-        private Label label1;
+        private Label workStartLabel;
         private DateTimePicker startDateTimePicker;
-        private Label label2;
+        private Label workCompletionLabel;
         private DateTimePicker endDateTimePicker;
-        private Label label3;
+        private Label oneDayPriceLabel;
         private TextBox coastTextBox;
-        private Label label4;
+        private Label emailLabel;
         private TextBox emailTextBox;
         private Label totalPriceLabel;
         private ErrorProvider errorProvider1;
+        private ComboBox comboBox1;
+        private Label choiseLanguageLabel;
     }
 }
